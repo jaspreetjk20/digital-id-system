@@ -49,6 +49,64 @@ e) External APIs / Libraries
 - QR Code Generation API
 - HTML5 Camera Access
 
+**Architecture Diagram**
+![System Design](assets/AntBox System Design.png)
+
+**Workflow**
+
+**Admin Dashboard Features**
+a) Live Dashboard
+- Currently IN users
+- Total users
+- System online status
+- Recent activity stream
+b) User Management
+- Add new users
+- Delete users
+- Search users
+- View QR status
+c) QR Operations
+- Generate missing QR codes
+- Drive linked storage
+d) Monitoring
+- Real-time attendance visibility
+- Fast refresh controls
+
+**Deployment Links**
+a) Appscript Project
+b) Deployed Web App
+c) Netlify Scanner
+d) Google Sheet
+e) Drive Folder
+f) Github repository
+
+**Folder Structure**
+digital-id-system/
+│── admin.html
+│── scanner.html
+│── Router.gs
+│── CoreEngine.gs
+│── BackWorker.gs
+│── AdminCore.gs
+│── IdentityGen.gs
+│── config.gs
+│── README.md
+
+**Purpose of Files**
+1. admin.html → Admin dashboard UI
+2. scanner.html → User scanner landing page
+3. Router.gs → Route control / page rendering
+4. CoreEngine.gs → Main scan validation engine
+5. BackWorker.gs → Queue processing worker
+6. AdminCore.gs → Dashboard backend functions
+7. IdentityGen.gs → QR generation logic
+8. config.gs → Constants and IDs
+
+**Challenges Faced**
+1. Camera Permissions Restriction
+2. Concurrent Delays
+3. Google Sheets Write Delays
+4. Duplicate Scans
 
 
 
