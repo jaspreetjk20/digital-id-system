@@ -50,7 +50,7 @@ e) External APIs / Libraries
 - HTML5 Camera Access
 
 **Architecture Diagram**
-![System Design](assets/AntBox System Design.png)
+![System Design](assets/AntBox%20System%20Design.png)
 
 **Workflow**
 
