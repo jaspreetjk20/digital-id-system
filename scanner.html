@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <base target="_top">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+
+    :root {
+      --bg-dark: #0f172a;
+      --bg-card: #1e293b;
+      --text-main: #f8fafc;
+      --text-muted: #94a3b8;
+      --accent-cyan: #22d3ee;
+      --status-in: #34d399;
+      --border: #334155;
+    }
+
+    body { 
+      font-family: 'Segoe UI', Tahoma, sans-serif; 
+      text-align: center; 
+      padding: 50px 20px; 
+      background: var(--bg-dark); 
+      color: var(--text-main);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 80vh;
+      margin: 0;
+    }
+
+    .card { 
+      background: var(--bg-card); 
+      padding: 40px 30px; 
+      border-radius: 16px; 
+      border: 1px solid var(--border);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.5); 
+      max-width: 400px;
+      width: 100%;
+    }
+
+    .card h2 {
+      margin-top: 0;
+      color: var(--accent-cyan);
+      font-size: 24px;
+    }
+
+    .card p {
+      color: var(--text-muted);
+      margin-bottom: 30px;
+      font-size: 16px;
+    }
+
+    .btn { 
+      background: var(--accent-cyan); 
+      color: var(--bg-dark); 
+      padding: 18px 36px; 
+      border: none; 
+      border-radius: 10px; 
+      font-size: 1.2rem; 
+      font-weight: 700; 
+      cursor: pointer; 
+      text-decoration: none; 
+      display: inline-block;
+      transition: filter 0.2s ease-in-out;
+    }
+
+    .btn:hover { 
+      filter: brightness(1.1); 
+    }
+
+    .status-msg { 
+      margin-top: 25px; 
+      color: var(--status-in); 
+      font-weight: bold; 
+      font-size: 15px;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h2>🔐 AntBox Access Portal</h2>
+    <p>Ready to check-in or check-out?</p>
+    
+    <a href="https://voluble-dragon-f92f7c.netlify.app/" target="_blank" class="btn">📸 Open Scanner</a>
+    
+    <div id="arrival-msg" class="status-msg"></div>
+  </div>
+
+  <script>
+    // If the user returns from Netlify via a redirect
+    const urlParams = new URLSearchParams(window.location.search);
+    if (urlParams.get('status') === 'success') {
+      document.getElementById('arrival-msg').innerText = "✅ Scan successful! Your status is being updated.";
+    }
+  </script>
+</body>
+</html>

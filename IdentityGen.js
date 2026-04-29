@@ -2,15 +2,12 @@
 
 function generateQRs() {
 
-  const FOLDER_ID = "12Bxh_S5LtP0OdxKwNDS16vqgiN0X78YZ";
-  const USERS_SHEET_NAME = "Users";
-
   //Access the Sheet & Drive
   const ss = SpreadsheetApp.getActiveSpreadsheet();
-  const sheet = ss.getSheetByName(USERS_SHEET_NAME);
+  const sheet = ss.getSheetByName(USERS_SHEET);
   const folder = DriveApp.getFolderById(FOLDER_ID);
  
-  //Get all data in one go
+  //Get all data 
   const data = sheet.getDataRange().getValues();
 
   for(let i = 1; i < data.length; i++){
@@ -22,13 +19,13 @@ function generateQRs() {
 
       try{
         
-        //Use the API to generate image for you
+        //API to generate image
         let apiUrl = "https://api.qrserver.com/v1/create-qr-code/?size=300x300&data=" + encodeURIComponent(userId);
 
         let response = UrlFetchApp.fetch(apiUrl);
         let blob = response.getBlob().setName(userId + "_" + userName + "_QR.png");
         
-        //Save it to your drive
+        //Save to drive
         let file = folder.createFile(blob);
         
         //Set permissions so that the Scanner App can see the image
