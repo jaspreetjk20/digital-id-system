@@ -2,19 +2,22 @@
 
 **Deployment Links**
 
-a) Appscript Project : [Appscript Project Link](https://script.google.com/d/1vVVsrbU2lI8FMMBk3scURB4bZysDyS0cIVlqhvE4uPRgKiqX7iVwCQsz/edit?usp=sharing)
+a) Demonstration Video: [Demonstration](https://drive.google.com/file/d/18UcndZkbKchMYQ-jdLbsdPK9QadTeDJH/view?usp=sharing)
 
-b) Deployed Web App: [Deployed Web App Link](https://script.google.com/macros/s/AKfycbwKiUx0f4htjIbP6gyXR2g4B1bUr94Om3T5HL_FTu9fnTyfKu_AONhdF-KmrTh6jeCO-Q/exec)
+b) Appscript Project : [Appscript Project Link](https://script.google.com/d/1vVVsrbU2lI8FMMBk3scURB4bZysDyS0cIVlqhvE4uPRgKiqX7iVwCQsz/edit?usp=sharing)
+
+c) Deployed Web App: [Deployed Web App Link](https://script.google.com/macros/s/AKfycbwKiUx0f4htjIbP6gyXR2g4B1bUr94Om3T5HL_FTu9fnTyfKu_AONhdF-KmrTh6jeCO-Q/exec)
    Access Admin Panel: [Admin Panel](https://script.google.com/macros/s/AKfycbwKiUx0f4htjIbP6gyXR2g4B1bUr94Om3T5HL_FTu9fnTyfKu_AONhdF-KmrTh6jeCO-Q/exec?mode=admin)
    
-c) Netlify Scanner: [Netlify Scanner](https://voluble-dragon-f92f7c.netlify.app/)
+d) Netlify Scanner: [Netlify Scanner](https://voluble-dragon-f92f7c.netlify.app/)
 
-d) Google Sheet: [Entry Exit Logger](https://docs.google.com/spreadsheets/d/1730OyL_7h_9Ox8vNsLr9rIfUFWmo7mRkoLKGSj-AAE4/edit?usp=sharing)
+e) Google Sheet: [Entry Exit Logger](https://docs.google.com/spreadsheets/d/1730OyL_7h_9Ox8vNsLr9rIfUFWmo7mRkoLKGSj-AAE4/edit?usp=sharing)
 
-e) Drive Folder: [QRs](https://drive.google.com/drive/folders/12Bxh_S5LtP0OdxKwNDS16vqgiN0X78YZ?usp=sharing)
+f) Drive Folder: [QRs](https://drive.google.com/drive/folders/12Bxh_S5LtP0OdxKwNDS16vqgiN0X78YZ?usp=sharing)
 
-f) Github repository: [Netlify frontend](https://github.com/jaspreetjk20/antbox_frontend)
+g) Github repository: [Netlify frontend](https://github.com/jaspreetjk20/antbox_frontend)
                       [Primary Github Repo With Codes & Access Links](https://github.com/jaspreetjk20/digital-id-system)
+
 
 **Problem Statement**
 Traditional biometric attendance and manual entry systems often face issues like slow processing, hardware dependency, maintenance costs, duplicate entries, and poor real-time visibility. This project is built to solve this by creating a **QR-powered Digital ID & Entry Logging System** where each user receives a unique QR code and every scan is validated and recorded instantly through a web-based scanner. The system replaces outdated attendance methods with a fast, scalable and admin-friendly solution.
